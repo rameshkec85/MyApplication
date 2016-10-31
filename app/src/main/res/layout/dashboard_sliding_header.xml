@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sliding_layout_header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal|bottom"
+    android:layout_marginTop="16dp">
+
+    <ImageView
+        android:id="@+id/img_avatar_dynamic_background"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="#FFFFFF" />
+
+    <FrameLayout
+        android:id="@+id/img_avatar_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="@mipmap/ic_launcher">
+
+        <ImageView
+            android:id="@+id/img_avatar"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_launcher" />
+
+        <com.pnikosis.materialishprogress.ProgressWheel
+            android:id="@+id/img_avatar_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            wheel:matProg_barColor="#FF0000"
+            wheel:matProg_barWidth="8dp"
+            wheel:matProg_circleRadius="88dp"
+            wheel:matProg_progressIndeterminate="true" />
+    </FrameLayout>
+</FrameLayout>

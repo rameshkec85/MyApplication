@@ -1,0 +1,59 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <declare-styleable name="MagicTextView">
+        <attr name="innerShadowColor" format="color" />
+        <attr name="innerShadowRadius" format="dimension" />
+        <attr name="innerShadowDx" format="dimension" />
+        <attr name="innerShadowDy" format="dimension" />
+
+        <attr name="outerShadowColor" format="color" />
+        <attr name="outerShadowRadius" format="dimension" />
+        <attr name="outerShadowDx" format="dimension" />
+        <attr name="outerShadowDy" format="dimension" />
+
+        <attr name="typeface" format="string" />
+
+        <attr name="foreground" format="reference|color" />
+        <!--<attr name="background" format="reference|color" />-->
+
+        <attr name="strokeWidth" format="dimension" />
+        <attr name="strokeMiter" format="dimension" />
+        <attr name="strokeColor" format="color" />
+        <attr name="strokeJoinStyle">
+            <enum name="miter" value="0" />
+            <enum name="bevel" value="1" />
+            <enum name="round" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SlidingUpDashboard">
+        <!-- INHERETED FROM SUPERCLASS -->
+        <attr name="dashboardPanelHeight" format="dimension" />
+        <attr name="dashboardShadowHeight" format="dimension" />
+        <attr name="dashboardParalaxOffset" format="dimension" />
+        <attr name="dashboardFadeColor" format="color" />
+        <attr name="dashboardFlingVelocity" format="integer" />
+        <attr name="dashboardDragView" format="reference" />
+        <attr name="dashboardOverlay" format="boolean" />
+        <attr name="dashboardClipPanel" format="boolean" />
+        <attr name="dashboardAnchorPoint" format="float" />
+        <attr name="dashboardInitialState" format="enum">
+            <enum name="expanded" value="0" />
+            <enum name="collapsed" value="1" />
+            <enum name="anchored" value="2" />
+            <enum name="hidden" value="3" />
+        </attr>
+        <!-- ADDED FOR DASHBOARD -->
+        <attr name="dashboardMainContent" format="reference" />
+        <attr name="dashboardAvatarDrawable" format="reference" />
+        <attr name="dashboardBody" format="reference" />
+    </declare-styleable>
+</resources>
